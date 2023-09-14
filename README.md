@@ -1,3 +1,24 @@
+# Test 
+
+- Make a two page app with routing that tries to show some details about a public git repository (no authentication required).
+- First page shows 2 input fields where you type username and repository name (or just one input that takes {username}/{repositoryname}) and a submit button that takes you to the second page.
+- Second page shows all the files in the repository as a list of absolute file paths.
+- This information must be from the latest commit on the default branch of the repository.
+There is no need to add styling (css). We will be looking for the ability to research unfamiliar APIs, React skills, Code quality, and organisation.
+For example if the directory structure is like this:
+index.js
+components
+├──c1.js
+├──c2.js
+└──pages
+	└──p1.js
+
+The output should be:
+index.js
+components/c1.js
+components/c2.js
+components/pages/p1.js
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
