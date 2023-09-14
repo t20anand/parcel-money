@@ -9,7 +9,7 @@ function Repo(){
     const fetchList = async (defaultBranch, path='/') => {
        let response = await axios.get(`https://api.github.com/repos/${username}/${repo}/contents${path}?ref=${defaultBranch}`, {
             headers: {
-              Authorization: `Bearer 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`,
+              Authorization: `Bearer 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`,
             },
         });
 
@@ -34,7 +34,7 @@ function Repo(){
         // getting default branch for the repo passed and passing to listfiles function
         axios.get(`https://api.github.com/repos/${username}/${repo}`,{
             headers: {
-              Authorization: `Bearer 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`,
+              Authorization: `Bearer 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`,
             },
         }).then((response)=>{
             listFiles(response.data.default_branch);
